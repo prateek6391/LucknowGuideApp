@@ -1,10 +1,15 @@
 package com.example.lucknowguide;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView restaurant = findViewById(R.id.restaurant);
+        RelativeLayout restaurant = findViewById(R.id.restaurant);
         restaurant.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -25,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Find the view that shows the park category
-        TextView park = findViewById(R.id.park);
+        RelativeLayout park = findViewById(R.id.park);
         //Set a ClickListener on that view
         park.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -38,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Find the view that shows the mall category
-        TextView mall = findViewById(R.id.shopping_mall);
+        RelativeLayout mall = findViewById(R.id.shopping_mall);
         //Set a ClickListener on that view
         mall.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -51,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //  Find the view that shows the history category
-        TextView history = findViewById(R.id.historic_places);
+        RelativeLayout history = findViewById(R.id.historic_places);
         //Set a ClickListener on that view
         history.setOnClickListener(new View.OnClickListener(){
             @Override

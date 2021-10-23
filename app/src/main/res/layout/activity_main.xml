@@ -12,23 +12,31 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="cursive"
-            android:padding="10dp"
-            android:textColor="@color/white"
-            android:text="Categories"
-            android:background="#EC0808"
-            android:textAllCaps="true"
-            android:textSize="30sp" />
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="cursive"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Categories"
+                android:background="@drawable/category_circle"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="190dp">
 
             <RelativeLayout
+                android:id="@+id/restaurant"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/bg1"
@@ -37,13 +45,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="25dp"
+                    android:padding="15dp"
                     android:text="Restaurants"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
-                    android:textSize="25sp" />
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/restaurant"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="expand_all"
@@ -72,6 +80,7 @@
             app:cardElevation="8dp">
 
             <RelativeLayout
+                android:id="@+id/park"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/bg2"    >
@@ -86,14 +95,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Parks"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:layout_alignParentRight="true"
-                    android:textSize="25sp"
-                    android:padding="25dp"  />
+                    android:textSize="20sp"
+                    android:padding="15dp"  />
 
                 <TextView
-                    android:id="@+id/park"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="expand_all"
@@ -110,6 +119,7 @@
             android:layout_height="190dp" >
 
             <RelativeLayout
+                android:id="@+id/shopping_mall"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/bg3"
@@ -120,11 +130,11 @@
                     android:layout_height="wrap_content"
                     android:text="Shopping"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:padding="25dp"  />
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:padding="15dp"  />
 
                 <TextView
-                    android:id="@+id/shopping_mall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="expand_all"
@@ -151,6 +161,7 @@
             app:cardElevation="8dp">
 
             <RelativeLayout
+                android:id="@+id/historic_places"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/bg4"    >
@@ -166,12 +177,12 @@
                     android:layout_height="wrap_content"
                     android:text="Historic"
                     android:textColor="@color/white"
+                    android:textAllCaps="true"
                     android:layout_alignParentRight="true"
-                    android:textSize="25sp"
-                    android:padding="25dp"  />
+                    android:textSize="20sp"
+                    android:padding="21dp"  />
 
                 <TextView
-                    android:id="@+id/historic_places"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="expand_all"
